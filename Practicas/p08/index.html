@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 8 - Uso Real de Tablas</title>
+    <style type="text/css">
+        td, th { border: 1px solid #CCC; padding: 8px; }
+        table { border: 1px solid black; border-collapse: collapse; margin-bottom: 30px; width: 100%; }
+        img { max-width: 150px; }
+    </style>
+</head>
+<body>
+    <h1>Aventuras en la Toscana</h1>
+    <table>
+        <caption>Registro de Visitas a la Toscana</caption>
+        <thead>
+            <tr>
+                <th scope="col">Imagen miniatura</th>
+                <th scope="col">Lugar</th>
+                <th scope="col">Fecha y hora aprox.</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Mapa de la ubicación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="fotos/campo.jpg" target="_blank"><img src="fotosmini/campo_mini.jpg" alt="Campo"></a></td>
+                <th scope="row">Val d'Orcia</th>
+                <td>15 de Mayo, 06:30 AM (Amanecer soleado)</td>
+                <td>Hermosos colinas verdes y cipreses al amanecer.</td>
+                <td rowspan="4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11688.583569421294!2d11.6152!3d43.0641" width="200" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="fotos/catedral.jpg" target="_blank"><img src="fotosmini/catedral_mini.jpg" alt="Catedral"></a></td>
+                <th scope="row">Catedral de Siena</th>
+                <td>16 de Mayo, 12:00 PM (Mediodía despejado)</td>
+                <td>Impresionante arquitectura gótica en el corazón de la ciudad.</td>
+            </tr>
+            <tr>
+                <td><a href="fotos/lavanda.jpg" target="_blank"><img src="fotosmini/lavanda_mini.jpg" alt="Lavanda"></a></td>
+                <th scope="row">Campos de Lavanda</th>
+                <td>17 de Mayo, 05:00 PM (Atardecer cálido)</td>
+                <td>Campos florecidos con un aroma increíble durante la primavera.</td>
+            </tr>
+            <tr>
+                <td><a href="fotos/postres.jpg" target="_blank"><img src="fotosmini/postres_mini.jpg" alt="Postres"></a></td>
+                <th scope="row">Cafetería Tradicional</th>
+                <td>18 de Mayo, 04:30 PM (Tarde fresca)</td>
+                <td>Degustación de repostería toscana artesanal.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Mi Próxima Aventura: Japón</h2>
+    <table>
+        <caption>Destinos planeados para el próximo viaje</caption>
+        <thead>
+            <tr>
+                <th scope="col">Vista previa</th>
+                <th scope="col">Destino</th>
+                <th scope="col">Horario planeado</th>
+                <th scope="col">Actividades</th>
+                <th scope="col">Ubicación general</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="fotos/tokyo.jpg" target="_blank"><img src="fotosmini/tokyo_mini.jpg" alt="Tokyo"></a></td>
+                <th scope="row">Shibuya, Tokyo</th>
+                <td>Día 1 - 07:00 PM</td>
+                <td>Recorrer el cruce emblemático y zonas tecnológicas.</td>
+                <td rowspan="5">Japón (Isla Principal Honshu)</td>
+            </tr>
+            <tr>
+                <td><a href="fotos/kyoto.jpg" target="_blank"><img src="fotosmini/kyoto_mini.jpg" alt="Kyoto"></a></td>
+                <th scope="row">Fushimi Inari, Kyoto</th>
+                <td>Día 3 - 06:00 AM</td>
+                <td>Caminata por el sendero de los mil Torii al amanecer.</td>
+            </tr>
+            <tr>
+                <td><a href="fotos/fuji.jpg" target="_blank"><img src="fotosmini/fuji_mini.jpg" alt="Monte Fuji"></a></td>
+                <th scope="row">Lago Kawaguchiko</th>
+                <td>Día 5 - 10:00 AM</td>
+                <td>Fotografía del Monte Fuji reflejado en el lago.</td>
+            </tr>
+            <tr>
+                <td><a href="fotos/osaka.jpg" target="_blank"><img src="fotosmini/osaka_mini.jpg" alt="Osaka"></a></td>
+                <th scope="row">Dotonbori, Osaka</th>
+                <td>Día 7 - 08:00 PM</td>
+                <td>Gastronomía local y anuncios neón nocturnos.</td>
+            </tr>
+            <tr>
+                <td><a href="fotos/nara.jpg" target="_blank"><img src="fotosmini/nara_mini.jpg" alt="Nara"></a></td>
+                <th scope="row">Parque de Nara</th>
+                <td>Día 9 - 02:00 PM</td>
+                <td>Convivencia con los ciervos sagrados y visita al Todai-ji.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
