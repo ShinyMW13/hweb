@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro al Concurso "Chidos mis Tenis"</title>
+</head>
+<body>
+
+    <h1>Registro al Concurso "Chidos mis Tenis"</h1>
+    <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike©? Justifica el por qué tus tenis se tienen que ir y tú puede ser uno de los diez afortunados ganadores.</p>
+
+    <!-- 
+      IMPORTANTE: Usar la URL de localhost para hweb según la nota del profesor:
+      http://localhost/hweb/practicas/p09/concurso.php
+    -->
+    <form action="http://localhost/hweb/practicas/p09/concurso.php" method="post">
+        
+        <fieldset>
+            <legend>Información Personal</legend>
+            <ul>
+                <li>Nombre: <input type="text" name="name"></li>
+                <li>Dirección de E-mail: <input type="email" name="email"></li>
+                <li>Número Telefónico: <input type="tel" name="phone"></li>
+                <li>Mis tenis son tan feos porque...<br>
+                    <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No más de 300 caracteres de longitud"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <h2>Diseña tus Mike personalizados:</h2>
+
+        <fieldset>
+            <legend>Diseño personalizado del Tenis</legend>
+            
+            <fieldset>
+                <legend>Color (escoge uno):</legend>
+                <ul>
+                    <li><label><input type="radio" name="color" value="red"> Rojo</label></li>
+                    <li><label><input type="radio" name="color" value="blue" checked> Azul</label></li>
+                    <li><label><input type="radio" name="color" value="black"> Negro</label></li>
+                    <li><label><input type="radio" name="color" value="silver"> Plateado</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Características (escoge tantas como quieras)</legend>
+                <ul>
+                    <li><label><input type="checkbox" name="features[]" value="sparkles"> Cordones brillantes</label></li>
+                    <li><label><input type="checkbox" name="features[]" value="metallic" checked> Logo metálico</label></li>
+                    <li><label><input type="checkbox" name="features[]" value="light"> Suela luminosa</label></li>
+                    <li><label><input type="checkbox" name="features[]" value="wifi"> WiFi integrado</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Talla</legend>
+                <p>Las medidas reflejan el estándar masculino: 
+                    <select name="size" size="1">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </p>
+            </fieldset>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="¡Chidos mis Tenis!">
+            <input type="reset" value="Restablecer">
+        </p>
+
+    </form>
+
+</body>
+</html>
